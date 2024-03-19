@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class PhotoPolicy < ApplicationPolicy
+class ApplicationPolicy
+
   attr_reader :user, :record
 
   def initialize(user, record)
@@ -49,5 +50,6 @@ class PhotoPolicy < ApplicationPolicy
     private
 
     attr_reader :user, :scope
+    
   end
 end
