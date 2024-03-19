@@ -30,8 +30,10 @@
           followers
 
         <% end %>
-      </div>
 
+  
+      </div>
+    <% if policy(user).liked? %>
       <div class="col">
         <%=
           link_to "#",
@@ -63,6 +65,7 @@
           
           pending
 
+         <% end %>
         <% end %>
       </div>
     </div>
